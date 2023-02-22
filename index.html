@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #cont {
+               margin-right: auto;
+               margin-left: auto;
+               min-width: 300px;
+               max-width: 1000px;
+        }
+        @media only screen and (max-width: 620px){
+            
+        #cont{
+            width: 98%;
+            position: relative;
+            top: 30px;
+            margin-top: 3%;
+        }
+        #obrazki{
+            float: none;
+            width: 98%;
+        }
+    }
+        #biuro-h1{
+            color: #bd282a;
+            text-align: center;
+        }
+        nav h3{
+            text-align: center;
+            color: red;
+        }
+        body{
+            background-color: #c2c3ce;
+        }
+    #kr{
+        width: 100%;
+        height: 230px;
+    }
+    .zdj2 {
+        height: 350px;
+        width: 33%;
+    }
+    #miejsca {
+        display: flex;
+        justify-content: space-around;
+    }
+    #obrazki{
+        display: flex;
+        justify-content: space-between;
+    }
+    #koniec{
+        padding-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div id="cont">
+    <header>
+    <h1 id="biuro-h1">Biuro podróży GLOB</h1>
+    <img src="data:image/jpeg;base64,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" alt="krajobraz" id="kr">
+    <h3>Pracujemy od poniedziałku do piątku w godz. 10.00 - 18.00</h3>
+    <hr>
+</header>
+<nav>
+    <h3>Tu będą elementy nawigacji</h3>
+</nav>
+    <hr>
+
+<main>
+    <h2>Zakres działania:</h2>
+
+    <ul>
+        <li>wycieczki</li>
+        <li>wczasy</li>
+        <li>biwaki</li>
+        <li>kuligi</li>
+        <li>narty</li>
+    </ul>
+    <hr>
+</main>
+<section>
+   <div id="miejsca">
+    <h2>Lato</h2>
+    <h2>Zima</h2>
+    <h2>Last minute</h2>
+</div>
+    <div id="obrazki">
+        
+    <img src="https://sadurski.com/wp-content/uploads/2019/03/lato-ciekawostki-o-lecie-letnie-2.jpg" alt="lato" class="zdj2">
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Silesian_-_Moravian_Beskids_in_winter_2014.JPG/800px-Silesian_-_Moravian_Beskids_in_winter_2014.JPG" alt="zima" class="zdj2">
+    
+   
+    <img src="https://ocdn.eu/pulscms-transforms/1/eS-k9kpTURBXy9kODE3YTRhMDZjZGU0MjM2MjcxZGFlM2U3NGQxOGEzNi5qcGeTlQMAH80D6M0CMpMJpjk0ZWUxZAaTBc0EsM0Cdt4AAaEwAQ/kuba-karaiby.jpg" alt="karaiby" class="zdj2"><br>
+</div>
+</section>
+<section>
+    <hr>
+    <h2>Kontakt</h2>
+    Biuro podróży GLOB <br>
+    05-012 Warszawa <br>
+    ul.Krótka 7
+    <br>
+    tel. 02345612 <br>
+    e-mail. glob.strona@gmail.com <br>
+    www.http/glob.pl <br>
+    <hr>
+</section>
+
+<section>
+    <h3>Zapisz się na newsletter <input type="text" placeholder="Wpisz adres e-mail"> <input type="submit"></h3>
+</section>
+<hr>
+<footer>
+<a href="">Ubezpieczenia</a> <a href="">Regulamin</a>
+<h3 id="koniec">Copyright © Biuro podróży GLOB</h3>
+</footer>
+</div>
+
+</body>
+</html>
